@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "lib": ["ES2020"],
+    "types": ["@cloudflare/workers-types"]
+  }
+}

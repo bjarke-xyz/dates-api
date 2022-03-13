@@ -1,0 +1,25 @@
+{
+  "name": "dates-api",
+  "version": "1.0.0",
+  "description": "",
+  "module": "dist/index.mjs",
+  "private": true,
+  "dependencies": {
+    "chrono-node": "^2.3.8",
+    "esbuild": "^0.11.20",
+    "itty-router": "^2.5.2",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3.3.1",
+    "typescript": "^4.2.4"
+  },
+  "scripts": {
+    "build": "npx tsc && node build.js",
+    "dev": "npm run build && npx wrangler@beta dev dist/index.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
