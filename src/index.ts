@@ -27,6 +27,17 @@ router.post('/naturaldate/parse', async (request: Request) => {
   })
 })
 
+router.get('/datetime/utcnow', (request) => {
+  const utcNowResponse = {
+    utcNow: new Date().toISOString(),
+  }
+  return new Response(JSON.stringify(utcNowResponse), {
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+})
+
 router.all('*', () => {
   return new Response('Not found', {
     status: 404,
