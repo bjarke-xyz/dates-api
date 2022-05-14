@@ -26,8 +26,6 @@ router.post('/naturaldate/parse', async (request: Request) => {
     },
   })
 
-  // Set CORS headers
-  const url = new URL(request.url)
   response.headers.set('Access-Control-Allow-Origin', '*')
 
   return response
